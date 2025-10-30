@@ -1,0 +1,375 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/ian/Desktop/_developer/2025-10_golang-web-browser
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 109
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 500
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1234
+    content: "\e[?2004h\e]0;ian@scghost: ~/Desktop/_developer/2025-10_golang-web-browser\a\e[01;32mian@scghost\e[00m:\e[01;34m~/Desktop/_developer/2025-10_golang-web-browser\e[00m$ "
+  - delay: 1973
+    content: g
+  - delay: 88
+    content: o
+  - delay: 63
+    content: ' '
+  - delay: 175
+    content: b
+  - delay: 119
+    content: u
+  - delay: 170
+    content: i
+  - delay: 151
+    content: l
+  - delay: 66
+    content: d
+  - delay: 88
+    content: ' '
+  - delay: 138
+    content: b
+  - delay: 68
+    content: r
+  - delay: 134
+    content: 'owser.go '
+  - delay: 477
+    content: "\r\n\e[?2004l\r"
+  - delay: 1121
+    content: "\e[?2004h\e]0;ian@scghost: ~/Desktop/_developer/2025-10_golang-web-browser\a\e[01;32mian@scghost\e[00m:\e[01;34m~/Desktop/_developer/2025-10_golang-web-browser\e[00m$ "
+  - delay: 2903
+    content: .
+  - delay: 34
+    content: /
+  - delay: 332
+    content: b
+  - delay: 68
+    content: r
+  - delay: 143
+    content: 'owser '
+  - delay: 565
+    content: "\r\n\e[?2004l\r"
+  - delay: 7
+    content: "Please provide a URL. Usage: browser https://example.com\r\n\e[?2004h\e]0;ian@scghost: ~/Desktop/_developer/2025-10_golang-web-browser\a\e[01;32mian@scghost\e[00m:\e[01;34m~/Desktop/_developer/2025-10_golang-web-browser\e[00m$ "
+  - delay: 657
+    content: .
+  - delay: 66
+    content: /
+  - delay: 416
+    content: b
+  - delay: 42
+    content: r
+  - delay: 157
+    content: 'owser '
+  - delay: 686
+    content: h
+  - delay: 84
+    content: t
+  - delay: 110
+    content: t
+  - delay: 156
+    content: p
+  - delay: 117
+    content: s
+  - delay: 193
+    content: ':'
+  - delay: 403
+    content: /
+  - delay: 113
+    content: /
+  - delay: 180
+    content: h
+  - delay: 197
+    content: t
+  - delay: 113
+    content: t
+  - delay: 339
+    content: p
+  - delay: 481
+    content: b
+  - delay: 183
+    content: i
+  - delay: 85
+    content: 'n'
+  - delay: 264
+    content: .
+  - delay: 254
+    content: o
+  - delay: 99
+    content: r
+  - delay: 538
+    content: g
+  - delay: 1375
+    content: /
+  - delay: 213
+    content: h
+  - delay: 179
+    content: t
+  - delay: 60
+    content: m
+  - delay: 68
+    content: l
+  - delay: 836
+    content: ' '
+  - delay: 733
+    content: '|'
+  - delay: 119
+    content: ' '
+  - delay: 336
+    content: l
+  - delay: 127
+    content: r
+  - delay: 18
+    content: e
+  - delay: 218
+    content: s
+  - delay: 144
+    content: s
+  - delay: 698
+    content: "\b\e[K"
+  - delay: 119
+    content: "\b\e[K"
+  - delay: 132
+    content: "\b\e[K"
+  - delay: 132
+    content: "\b\e[K"
+  - delay: 83
+    content: e
+  - delay: 133
+    content: s
+  - delay: 137
+    content: s
+  - delay: 142
+    content: "\r\n\e[?2004l\r"
+  - delay: 6
+    content: "\e[?1049h\e[22;0;0t\e[?1h\e=\r"
+  - delay: 14411
+    content: "--- Headers ---\r\n| Access-Control-Allow-Credentials: true\r\n| Date: Wed, 29 Oct 2025 18:48:16 GMT\r\n| Content-Type: text/html; charset=utf-8\r\n| Content-Length: 3741\r\n| Server: gunicorn/19.9.0\r\n| Access-Control-Allow-Origin: *\r\n---------------\r\n--- Body ---\r\n<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n  </head>\r\n  <body>\r\n      <h1>Herman Melville - Moby-Dick</h1>\r\n\r\n      <div>\r\n        <p>\r\n          Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in prepa \bration for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old black \bsmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab' \bs leg, but still retained it on deck, fast lashed to ringbolts by the foremast; being now almost incessantly  \binvoked by the headsmen, and harpooneers, and bowsmen to do some little job for them; altering, or repairing, \b or new shaping their various weapons and boat furniture. Often he would be surrounded by an eager circle, al \bl waiting to be served; holding boat-spades, pike-heads, harpoons, and lances, and jealously watching his eve \bry sooty movement, as he toiled. Nevertheless, this old man's was a patient hammer wielded by a patient arm.  \bNo murmur, no impatience, no petulance did come from him. Silent, slow, and solemn; bowing over still further \b his chronically broken back, he toiled away, as if toil were life itself, and the heavy beating of his hamme \br the heavy beating of his heart. And so it was.—Most miserable! A peculiar walk in this old man, a certain s \blight but painful appearing yawing in his gait, had at an early period of the voyage excited the curiosity of \b the mariners. And to the importunity of their persisted questionings he had finally given in; and so it came \b to pass that every one now knew the shameful story of his wretched fate. Belated, and not innocently, one bi \btter winter's midnight, on the road running between two country towns, the blacksmith half-stupidly felt the  \bdeadly numbness stealing over him, and sought refuge in a leaning, dilapidated barn. The issue was, the loss  \b:\e[K"
+  - delay: 1496
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kof the extremities of both feet. Out of this revelation, part by part, at last came out the four acts of the  \b:\e[K"
+  - delay: 476
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kgladness, and the one long, and as yet uncatastrophied fifth act of the grief of his life's drama. He was an  \b:\e[K"
+  - delay: 178
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kold man, who, at the age of nearly sixty, had postponedly encountered that thing in sorrow's technicals calle \b:\e[K"
+  - delay: 123
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kd ruin. He had been an artisan of famed excellence, and with plenty to do; owned a house and garden; embraced \b:\e[K"
+  - delay: 600
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K a youthful, daughter-like, loving wife, and three blithe, ruddy children; every Sunday went to a cheerful-lo \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Koking church, planted in a grove. But one night, under cover of darkness, and further concealed in a most cun \b:\e[K"
+  - delay: 39
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kning disguisement, a desperate burglar slid into his happy home, and robbed them all of everything. And darke \b:\e[K"
+  - delay: 39
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kr yet to tell, the blacksmith himself did ignorantly conduct this burglar into his family's heart. It was the \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K Bottle Conjuror! Upon the opening of that fatal cork, forth flew the fiend, and shrivelled up his home. Now, \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K for prudent, most wise, and economic reasons, the blacksmith's shop was in the basement of his dwelling, but \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K with a separate entrance to it; so that always had the young and loving healthy wife listened with no unhapp \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Ky nervousness, but with vigorous pleasure, to the stout ringing of her young-armed old husband's hammer; whos \b:\e[K"
+  - delay: 39
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Ke reverberations, muffled by passing through the floors and walls, came up to her, not unsweetly, in her nurs \b:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kery; and so, to stout Labor's iron lullaby, the blacksmith's infants were rocked to slumber. Oh, woe on woe!  \b:\e[K"
+  - delay: 389
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[KOh, Death, why canst thou not sometimes be timely? Hadst thou taken this old blacksmith to thyself ere his fu \b:\e[K"
+  - delay: 599
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kll ruin came upon him, then had the young widow had a delicious grief, and her orphans a truly venerable, leg \b:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[Kendary sire to dream of in their after years; and all of them a care-killing competency.\r\n:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K        </p>\r\n:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K      </div>\r\n:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K  </body>\r\n:\e[K"
+  - delay: 42
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K</html>\r\n:\e[K"
+  - delay: 39
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\a\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KB\bB\r\e[K\r\e[K\e[7m(END)\e[27m\e[K"
+  - delay: 353
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eMsmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab'\e[35;1H\r\e[K:\e[K"
+  - delay: 602
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eMration for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old black\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM          Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in prepa\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM        <p>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM      <div>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM      <h1>Herman Melville - Moby-Dick</h1>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM  <body>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM  </head>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM  <head>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM<html>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 42
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM<!DOCTYPE html>\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM--- Body ---\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM---------------\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Access-Control-Allow-Origin: *\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Server: gunicorn/19.9.0\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Content-Length: 3741\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Content-Type: text/html; charset=utf-8\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Date: Wed, 29 Oct 2025 18:48:16 GMT\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM| Access-Control-Allow-Credentials: true\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\e[H\eM--- Headers ---\r\n\e[35;1H\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\a\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 41
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 42
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 40
+    content: "\r\e[K \e[KESC\b\b\bESC\e[KO\bO\e[KA\bA\r\e[K\r\e[K:\e[K"
+  - delay: 1092
+    content: "\r\e[K\e[?1l\e>\e[?1049l\e[23;0;0t\e[?2004h\e]0;ian@scghost: ~/Desktop/_developer/2025-10_golang-web-browser\a\e[01;32mian@scghost\e[00m:\e[01;34m~/Desktop/_developer/2025-10_golang-web-browser\e[00m$ "
+  - delay: 1831
+    content: "\e[?2004l\r\r\nlogout\r\n"

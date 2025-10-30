@@ -41,6 +41,5 @@ func main() {
 		fmt.Printf("Error reading body: %v\n", err)
 		os.Exit(1)
 	}
-
 	fmt.Println(string(body))
 }
