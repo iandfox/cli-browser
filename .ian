@@ -1,3 +1,8 @@
 to compile: go build browser.go
 to run: ./browser https://httpbin.org/html
      or   ./browser https://httpbin.org/html | less    (or | more ? can't remember the diff)
+
+
+gif is from terminalizer.
+     terminalizer record demo
+     terminalizer render demo
