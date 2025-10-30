@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"io"
+	// "io"
 	"net/http"
 	"os"
+	"log"
+	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/net/html"
 )
 
 func main() {
@@ -35,11 +38,40 @@ func main() {
 	fmt.Println("---------------")
 
 	// body content
-	fmt.Println("--- Body ---")
-	body, err := io.ReadAll(resp.Body)
+	// // NOTE: if you do io.ReadAll right now, we can't read it later for the goquery. if we wanted to do this (we don't. we're using goquery), we could read the body into a byte slice, then uses bytes.newReader a couple times
+	// fmt.Println("--- Body ---")
+	// body, err := io.ReadAll(resp.Body)
+	// if err != nil {
+	// 	fmt.Printf("Error reading body: %v\n", err)
+	// 	os.Exit(1)
+	// }
+	// fmt.Println(string(body))
+
+
+	///
+	/// HTML parsing
+	///
+
+	fmt.Println("---------------")
+
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		fmt.Printf("Error reading body: %v\n", err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
-	fmt.Println(string(body))
+
+	summarizeTagsRecursively(doc.Selection, "")
+}
+
+func summarizeTagsRecursively(sel *goquery.Selection, indentation string) {
+	for _, node := range sel.Nodes {
+
+		// Only print element nodes (tags). ignore text, comments etc, for now
+        if node.Type == html.ElementNode {
+            fmt.Printf("%s%s %s\n", indentation, node.Data, node.Attr) // node.Data holds the tag name
+        }
+	}
+
+	sel.Children().Each(func(i int, childSelection *goquery.Selection) {
+		summarizeTagsRecursively(childSelection, indentation + "  ")
+	})
 }
